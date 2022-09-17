@@ -16,3 +16,7 @@ jobs:
       - run: docker build -t tlaurent1985/multi-nginx ./nginx
       - run: docker build -t tlaurent1985/multi-server ./server
       - run: docker build -t tlaurent1985/multi-worker ./worker
+      - run: docker push tlaurent1985/multi-client
+      - run: docker push tlaurent1985/multi-nginx
+      - run: docker push tlaurent1985/multi-server
+      - run: docker push tlaurent1985/multi-worker
